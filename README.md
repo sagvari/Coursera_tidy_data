@@ -3,7 +3,7 @@
 # What is the script doing?
 The script for this project consists of 5 steps.
 
-In Step 1 the requires packages and the zipped data file are loaded.
+In Step 1 the requires packages and the zipped data file are loaded and unzipped.
 
 Step 2 is about reading and merging the data. Separate X, Y, and SUBJECT data frames are created by binding the relevant test and train data files.
 
