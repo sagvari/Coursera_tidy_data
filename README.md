@@ -13,3 +13,9 @@ In Step 4 descriptive activity labels are applied.
 
 In Step 5 a unified data frame is created in the first step, and then column means are calculated and exported into a separate 'tidy' dataset. 
 
+
+# Files
+
+run_analysis.R - the R script
+tidy_data.txt - output/result of the script (also uploaded to Coursera)
+Codebook.rm - variable descriptions
