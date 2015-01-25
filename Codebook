@@ -1,4 +1,9 @@
-# Variables
+# Source of data
+Human Activity Recognition Using Smartphones Dataset, Version 1.0
+www.smartlab.ws
+
+
+# Data created/used in the script
 
 x_train, y_train, subject_train, x_test, y_test, subject_test - original data as stored in the archive
 x_data, y_data, subject_data - merged (test+train) sensor, activity and subject data
