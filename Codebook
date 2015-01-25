@@ -1,1 +1,10 @@
-#
+# Variables
+
+x_train, y_train, subject_train, x_test, y_test, subject_test - original data as stored in the archive
+x_data, y_data, subject_data - merged (test+train) sensor, activity and subject data
+
+activity - activity labels
+
+full_data_set - merged subject, activity and sensor (mean+std) data
+
+tidy_data - final data frame that contains the mean values computed by subject and activity
