@@ -24,13 +24,13 @@ x_test <- read.table("test/X_test.txt")
 y_test <- read.table("test/y_test.txt")
 subject_test <- read.table("test/subject_test.txt")
 
-# create 'x' data set
+# creating the merged 'x' data set
 x_data <- rbind(x_train, x_test)
 
-# create 'y' data set
+# creating the merged 'y' data set
 y_data <- rbind(y_train, y_test)
 
-# create 'subject' data set
+# creating the merged 'subject' data set
 subject_data <- rbind(subject_train, subject_test)
 
 
