@@ -1,18 +1,15 @@
 ###############################################################################
-# 1. Loading required packages
+# 1. Loading required packages and data, unzipping to work directory
 ###############################################################################
 
 library(plyr)
 library(utils)
 
 # Acquiring data
-setwd("~/Coursera/Getting and cleaning data/Course project")
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 file <- "dataset.zip"
 download.file(url, file)
 unzip(file)
-setwd("~/Coursera/Getting and cleaning data/Course project/UCI HAR Dataset")
-
 
 
 ###############################################################################
