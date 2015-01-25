@@ -1,15 +1,11 @@
 ###############################################################################
-# Loading required packages
+# 1. Loading required packages
 ###############################################################################
 
 library(plyr)
 library(utils)
 
-
-###############################################################################
 # Acquiring data
-###############################################################################
-
 setwd("~/Coursera/Getting and cleaning data/Course project")
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 file <- "dataset.zip"
@@ -20,7 +16,7 @@ setwd("~/Coursera/Getting and cleaning data/Course project/UCI HAR Dataset")
 
 
 ###############################################################################
-# Merging training and test sets into one dataset
+# 2. Merging training and test sets into one dataset
 ###############################################################################
 
 x_train <- read.table("train/X_train.txt")
@@ -43,7 +39,7 @@ subject_data <- rbind(subject_train, subject_test)
 
 
 ###############################################################################
-# Extracting measurements on the mean and standard deviation 
+# 3. Extracting measurements on the mean and standard deviation 
 ###############################################################################
 
 features <- read.table("features.txt")
@@ -60,7 +56,7 @@ names(x_data) <- features[mean_std_features, 2]
 
 
 ###############################################################################
-# Applying descriptive activity names
+# 4. Applying descriptive activity names
 ###############################################################################
 
 activity <- read.table("activity_labels.txt")
@@ -76,7 +72,7 @@ names(subject_data) <- "subject"
 
 
 ###############################################################################
-# Creating and saving the independent tidy data set with the average of each variable
+# 5. Creating and saving the independent tidy data set with the average of each variable
 # for each activity and each subject
 ###############################################################################
 
